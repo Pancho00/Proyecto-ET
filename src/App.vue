@@ -11,11 +11,12 @@ import BarraInferior from "./components/BarraInferior.vue";
 </template>
 
 <style>
-#app {
+#componentes {
   max-width: 1280px;
   margin: 60px auto;
   padding: 2rem;
 
   font-weight: normal;
 }
+
 </style>

@@ -9,8 +9,6 @@
 
 <script setup>
 import InicioSesion from "../components/inicioSesion.vue";
-import BarraSuperior from "../components/BarraSuperior.vue";
-import BarraInferior from "../components/BarraInferior.vue";
 </script>
 <style scoped>
 body{

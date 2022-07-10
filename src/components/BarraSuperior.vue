@@ -9,13 +9,19 @@
               ><img
                 src="../assets/img/icon-help.svg"
                 alt=""
-                class="invertir-color w-75"
+                class="invertir-color w-50"
             /></RouterLink>
           </div>
 
           <div class="col">
-            <div class="navbar-nav">
-              <RouterLink to="/login" class="nav-link">Login</RouterLink>
+            <div class="navbar-nav d-inline">
+              <RouterLink to="/login" class="px-2 display-1 fs-5"
+                >Login</RouterLink
+              >
+              <RouterLink to="/register" class="px-2 display-1 fs-5"
+                >Registrarse</RouterLink
+              >
+              <RouterLink to="/" class="px-2 display-1 fs-5">Home</RouterLink>
             </div>
           </div>
         </div>
@@ -46,5 +52,12 @@ body {
 
 .invertir-color {
   filter: invert(100%);
+}
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+.nav a.router-link-exact-active {
+  font-weight: 400;
 }
 </style>
