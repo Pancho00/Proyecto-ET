@@ -1,17 +1,12 @@
 <template>
-  <!-- Footer -->
-  <footer class="fixed-bottom footer">
-    <!-- Section: Social media -->
+  <footer class="position-absolute bottom-0 w-100 start-0 footer">
     <section
       class="d-flex justify-content-between p-4 text-white color-section-redes"
     >
-      <!-- Left -->
       <div class="me-5">
         <span>Get connected with us on social networks:</span>
       </div>
-      <!-- Left -->
 
-      <!-- Right -->
       <div>
         <a href="" class="text-white me-4">
           <i class="fab fa-facebook-f"></i>
@@ -32,18 +27,12 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <!-- Right -->
     </section>
-    <!-- Section: Social media -->
 
-    <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
         <div class="row mt-3">
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
             <h6 class="text-uppercase fw-bold">Company name</h6>
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
@@ -54,11 +43,8 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Useful links</h6>
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
@@ -77,11 +63,7 @@
               <a href="#!" class="text-dark">Help</a>
             </p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contact</h6>
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
@@ -92,23 +74,16 @@
             <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
             <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
     </section>
-    <!-- Section: Links  -->
   </footer>
-  <!-- Footer -->
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 .footer {
   background-color: #dafdba;
+  height: 60px;
 }
 .color-section-redes {
   background-color: #9aeba3;

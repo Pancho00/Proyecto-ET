@@ -1,24 +1,33 @@
 <template>
-  <header class="fixed-top">
+  <header class="position-absolute top-0 start-0 w-100">
     <nav class="navbar shadow nav">
       <div class="container">
-        <a href="https://www.remind.com" class="Link Header-brandLink"></a>
-        <a href="/"
-          ><img
-            src="../assets/img/icon-help.svg"
-            alt=""
-            class="invertir-color w-75"
-        /></a>
+        <RouterLink to="/" class="Link Header-brandLink"></RouterLink>
+        <div class="row">
+          <div class="col">
+            <RouterLink to="/"
+              ><img
+                src="../assets/img/icon-help.svg"
+                alt=""
+                class="invertir-color w-75"
+            /></RouterLink>
+          </div>
+
+          <div class="col">
+            <div class="navbar-nav">
+              <RouterLink to="/login" class="nav-link">Login</RouterLink>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
+body {
+  margin-top: 60px;
+}
 .nav {
   --color: #13678a;
   background-color: var(--color);
