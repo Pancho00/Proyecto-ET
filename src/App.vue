@@ -3,11 +3,11 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-<h1>holiwui</h1>
+
+  <RouterView />
 </template>
 
 <style>
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -15,5 +15,4 @@ import { RouterLink, RouterView } from "vue-router";
 
   font-weight: normal;
 }
-
 </style>
