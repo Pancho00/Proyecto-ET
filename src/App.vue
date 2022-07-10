@@ -1,9 +1,9 @@
-<script setup >
+<script setup>
 import { RouterLink, RouterView } from "vue-router";
 import listarRegistros from "./components/listarRegistros.vue";
 </script>
 <template>
-  <listarRegistros />
+  <h1>holiwui</h1>
 </template>
 
 <style>
