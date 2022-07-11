@@ -5,24 +5,26 @@
         <RouterLink to="/" class="Link Header-brandLink"></RouterLink>
         <div class="row">
           <div class="col">
-            <RouterLink to="/"
+            <a href="https://www.remind.com"
               ><img
                 src="../assets/img/icon-help.svg"
                 alt=""
                 class="invertir-color w-50"
-                title="Ayuda"
-            /></RouterLink>
+                title="Ayuda - Remind.com"
+            /></a>
           </div>
 
           <div class="col">
             <div class="navbar-nav d-inline">
-              <RouterLink to="/login" class="px-2 font-style fs-5" 
+              <RouterLink to="/login" class="px-2 font-style fs-5"
                 >Ingresar</RouterLink
               >
               <RouterLink to="/register" class="px-2 font-style fs-5"
                 >Registrarse</RouterLink
               >
-              <RouterLink to="/home" class="px-2 font-style fs-5">Home</RouterLink>
+              <RouterLink to="/home" class="px-2 font-style fs-5"
+                >Home</RouterLink
+              >
             </div>
           </div>
         </div>
@@ -32,7 +34,7 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 
 body {
   margin-top: 60px;
@@ -64,7 +66,7 @@ body {
   text-shadow: 1px 1px 10px white;
 }
 
-.font-style{
-  font-family: 'Manrope', sans-serif;
+.font-style {
+  font-family: "Manrope", sans-serif;
 }
 </style>

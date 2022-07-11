@@ -1,15 +1,17 @@
 <template>
   <div class="cont d-flex justify-content-center" id="componentes">
     <div
-        class="alert alert-danger alerta mt-3 "
-        role="alert"
-        v-if="valorIncorrecto"
-      >
-        Datos ingresados incorrectos
-        <button class="btn-close float-right" v-on:click="cerrar_alerta()"></button>
-      </div>
+      class="alert alert-danger alerta mt-3"
+      role="alert"
+      v-if="valorIncorrecto"
+    >
+      Datos ingresados incorrectos
+      <button
+        class="btn-close float-right"
+        v-on:click="cerrar_alerta()"
+      ></button>
+    </div>
     <div class="inicioSesion row d-flex m-1">
-       
       <div class="imagen col-md-8 col-12">
         <img
           class="w-100"
@@ -90,12 +92,12 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 .cont {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .imagen.col-md-8 {
@@ -119,7 +121,7 @@ a {
 .btn-primary.bton {
   background-color: #13678a;
 }
-.alert.alerta{
- position: fixed
+.alert.alerta {
+  position: fixed;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer mt-5">
+  <footer class="footer">
     <section
       class="d-flex justify-content-between p-4 text-white color-section-redes shadow-sm"
     >
