@@ -1,13 +1,14 @@
 <template>
-<div class="shadow-lg p-3 mb-5 bg-body rounded">
-  <canvas id="graficoSesiones" width="100" height="100"></canvas>
+<div class="shadow-lg p-3 mb-5 bg-body rounded" id="componentes">
+  <h1 class="lead d-flex justify-content-center mb-4 shadow-text">Gráfico de lineas según tu rendimiento en las sesiones completadas</h1>
+  <canvas id="graficoSesiones" width="50"></canvas>
 </div>
     
 </template>
 
 <script>
 import Chart from "chart.js/auto";
-import axios from "axios"
+
 export default {
   data(){
     return{
@@ -75,5 +76,9 @@ export default {
 };
 </script>
 
-<style>
+
+<style scoped>
+.shadow-text{
+  text-shadow: 1px 1px 2px rgb(68, 68, 68);
+}
 </style>
