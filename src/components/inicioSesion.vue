@@ -1,6 +1,15 @@
 <template>
   <div class="cont d-flex justify-content-center" id="componentes">
-    <div class="inicioSesion row d-flex shadow m-1">
+    <div
+        class="alert alert-danger alerta mt-3 "
+        role="alert"
+        v-if="valorIncorrecto"
+      >
+        Datos ingresados incorrectos
+        <button class="btn-close float-right" v-on:click="cerrar_alerta()"></button>
+      </div>
+    <div class="inicioSesion row d-flex m-1">
+       
       <div class="imagen col-md-8 col-12">
         <img
           class="w-100"
@@ -9,9 +18,6 @@
       </div>
       <div class="sesion col d-flex justify-content-center align-items-center">
         <div class="w-75">
-          <div class="alert alert-danger" role="alert" v-if="valorIncorrecto">
-            Nombre de usuario o Contraseña incorrecta.
-          </div>
           <div class="d-flex justify-content-center my-3">
             <h3 class="tituloSesion">Iniciar sesión</h3>
           </div>
@@ -32,7 +38,7 @@
             />
             <div class="d-flex justify-content-center my-3">
               <button
-                class="btn btn-primary"
+                class="btn btn-primary bton"
                 type="button"
                 name="login-submit"
                 id="login-submit"
@@ -41,6 +47,11 @@
               >
                 Ingresar
               </button>
+            </div>
+            <div class="d-flex justify-content-center my-3">
+              <RouterLink to="/register" class="px-2 display-1 fs-6"
+                >Registrarse</RouterLink
+              >
             </div>
           </form>
         </div>
@@ -71,15 +82,20 @@ export default {
         this.valorIncorrecto = true;
       }
     },
+    cerrar_alerta() {
+      this.valorIncorrecto = false;
+    },
   },
 };
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 .cont {
   position: relative;
   width: 100%;
   height: 100%;
+  font-family: 'Manrope', sans-serif;
 }
 
 .imagen.col-md-8 {
@@ -92,5 +108,18 @@ export default {
 .tituloSesion {
   -webkit-text-fill-color: #45c4b0;
   -webkit-text-stroke: 0.25px black;
+}
+.inicioSesion.row {
+  box-shadow: 2px 2px 20px 5px rgba(85, 85, 85, 0.7);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.btn-primary.bton {
+  background-color: #13678a;
+}
+.alert.alerta{
+ position: fixed
 }
 </style>
